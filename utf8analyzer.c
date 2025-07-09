@@ -136,7 +136,7 @@ void substring(char str[]){
 	}
 
 	result[dst_index] = 0;
-	printf("Substring of the first 6 code points: %s\n", result);
+	printf("Substring of the first 6 code points: \"%s\"\n", result);
 
 }
 
@@ -147,5 +147,11 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 	
+    valid_ascii(argv[1]);
+    length_in_bytes(argv[1]);
+    codepoint_number(argv[1]);
+    bytes_each_codepoint(argv[1]);
+    substring(argv[1]);
+    next_char_at_3(argv[1]);
     // implement the UTF-8 analyzer here
 }
